@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETE-INSPECTOR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 55px;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            text-align: center;
+            margin-top: 200px;
+            margin-left: 0px;
+           margin-right:0px;
+           margin-bottom:0px;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #file {
+            display: none;
+        }
+        #choose-file-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #choose-file-btn:hover {
+            background-color: #0056b3;
+        }
+        #upload-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #upload-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="{{ url_for('static', filename='istockphoto-461265118-640_adpp_is.mp4') }}" type="video/mp4">
+        <!-- Add additional source elements for different video formats if needed -->
+    </video>
+    <h1>FETE-INSPECTOR</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file" id="choose-file-btn">Choose File</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Upload" id="upload-btn">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

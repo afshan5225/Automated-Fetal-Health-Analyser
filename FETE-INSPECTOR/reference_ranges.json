@@ -1,0 +1,27 @@
+
+{
+    "First Trimester Scan Report": {
+        "Liquor": "Normal",
+        "Cardiac Activity": "Present",
+        "Fetal Heartbeat": {
+            "Min": 110,
+            "Max": 160
+        },
+        "Crown-Rump Length": {
+            "Min": 43,
+            "Max": 60
+        },
+        "Biparietal Diameter": {
+            "Min": 17,
+            "Max": 42
+        },
+        "Head Circumference": {
+            "Min": 60,
+            "Max": 80
+        },
+        "Abdominal Circumference": {
+            "Min": 50,
+            "Max": 60
+        }
+    }
+}

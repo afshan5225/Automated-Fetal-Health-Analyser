@@ -1,0 +1,112 @@
+{
+  "lang":"en",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.7.5,<3.8.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"a6d0fc360",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+      "ABDOMINAL CIRCUMFERENCE",
+      "BIPARIETAL DIAMETER",
+      "CARDIAC ACTIVITY",
+      "CROWN LUMP LENGTH",
+      "FETAL ACTIVITY",
+      "FETAL HEART BEAT",
+      "HEAD CIRCUMFERENCE",
+      "LIQUOR",
+      "PLACENTA",
+      "TRANSVERSE CEREBELLAR DIAMETER",
+      "TRIMESTER"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner"
+  ],
+  "components":[
+    "tok2vec",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":1.0,
+    "ents_p":1.0,
+    "ents_r":1.0,
+    "ents_per_type":{
+      "TRIMESTER":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "PLACENTA":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "LIQUOR":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "FETAL ACTIVITY":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "CARDIAC ACTIVITY":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "FETAL HEART BEAT":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "CROWN LUMP LENGTH":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "BIPARIETAL DIAMETER":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "HEAD CIRCUMFERENCE":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "ABDOMINAL CIRCUMFERENCE":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "TRANSVERSE CEREBELLAR DIAMETER":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      }
+    },
+    "tok2vec_loss":0.0000001035,
+    "ner_loss":0.0000001938
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Entity Recognition Result</h1>
+    <h2>Entities:</h2>
+    <ul>
+        {% for entity in entities %}
+            <li>{{ entity[0] }} - {{ entity[1] }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Health Condition:</h2>
+    <p>{{ health_condition }}</p>
+</body>
+</html>
